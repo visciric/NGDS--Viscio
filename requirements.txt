@@ -1,0 +1,14 @@
+ipython
+ipykernel
+jupyter
+black[jupyter]
+pylint
+numpy
+scipy
+pandas
+seaborn
+matplotlib
+scikit-learn
+numba
+pymed
+arxiv
