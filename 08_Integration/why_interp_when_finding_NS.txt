@@ -1,0 +1,25 @@
+Frage: Wieso Interpoliert man wenn man die NS finden will? 
+
+Antwort von Chatgpt:
+
+Das Interpolieren der Temperaturwerte (`temp_interpolation`) ist erforderlich, 
+um eine glatte Funktion zu erhalten, die die gegebenen Datenpunkte verbindet. 
+Dies ist notwendig, um eine genaue Berechnung der Nullstellen durchführen zu können. 
+Wenn wir nur die diskreten Messwerte verwenden würden, könnten die Berechnungen der 
+Nullstellen ungenau sein oder fehlschlagen.
+Durch die Interpolation wird eine kontinuierliche Funktion erstellt, 
+die die Temperaturwerte zwischen den Messzeitpunkten schätzt. 
+Dies ermöglicht es uns, die Nullstellen der Funktion zu finden, 
+indem wir numerische Methoden wie die Bisektion (`bisect`) 
+oder Newton-Raphson (`newton`) anwenden.
+Die Verwendung der Interpolation zur Berechnung der Nullstellen hat den 
+Vorteil, dass wir eine genauere Schätzung der Positionen der Nullstellen erhalten können, 
+auch wenn zwischen den Messzeitpunkten keine Temperaturwerte vorliegen. Die Interpolation hilft uns, 
+die Funktion zwischen den diskreten Datenpunkten zu modellieren und somit eine bessere 
+Schätzung für die Nullstellen zu erhalten.
+In diesem speziellen Fall wird die kubische Interpolation (`kind="cubic"`) 
+verwendet, um eine glatte Funktion zu erzeugen, die den Verlauf der Temperaturwerte zwischen 
+den Messzeitpunkten besser approximiert. Dadurch können wir die Nullstellen genauer berechnen.
+Es ist wichtig zu beachten, dass die Wahl der Interpolationsmethode von der Natur 
+der Daten und den spezifischen Anforderungen abhängt. In einigen Fällen kann eine andere 
+Interpolationsmethode oder eine alternative Methode zur Schätzung der Nullstellen erforderlich sein.
